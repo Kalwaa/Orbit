@@ -1,1 +1,7 @@
+Copyright (c) 2026 Orbit. All rights reserved.
 
+This software and its source code are the exclusive property of the Orbit project creator.
+
+No permission is granted to copy, modify, distribute, sublicense, or use this software, in whole or in part, without prior written permission from the copyright holder.
+
+All rights reserved.
