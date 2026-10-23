@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10111b">
+  <title>Orbit — ton espace social</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Orbit accueil"><span class="brand-mark">✳</span><span>orbit<span class="brand-dot">.</span></span></a>
+      <p class="side-label">ESPACE</p>
+      <button class="nav-item active" data-view="feed"><span>⌂</span> Fil d’actualité</button>
+      <button class="nav-item" data-view="discover"><span>✦</span> Découvrir</button>
+      <button class="nav-item" data-view="saved"><span>♡</span> Mes favoris</button>
+      <div class="sidebar-bottom">
+        <div class="mini-profile"><div class="avatar avatar-you">Y</div><div><strong>Ton profil</strong><small>@toi</small></div></div>
+        <p class="tiny-note">Prototype en cours de création ✨</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div><p class="eyebrow">TON PETIT COIN D’INTERNET</p><h1 id="page-title">Le fil d’actualité</h1></div>
+        <div class="online-pill"><span class="status-dot"></span> Bienvenue</div>
+      </header>
+
+      <section class="welcome-card">
+        <div class="welcome-copy"><span class="sparkle">✦</span><p class="eyebrow">BIENVENUE SUR ORBIT</p><h2>Les idées font<br><span>leur propre orbite.</span></h2><p>Partage ce qui te passionne. Découvre ce qui anime les autres.</p></div>
+        <div class="orbit-art" aria-hidden="true"><div class="planet planet-one"></div><div class="planet planet-two"></div><div class="planet planet-three"></div><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div></div>
+      </section>
+
+      <section class="composer panel">
+        <div class="avatar avatar-you">Y</div>
+        <form id="post-form">
+          <label class="sr-only" for="post-text">Écris une publication</label>
+          <textarea id="post-text" maxlength="280" placeholder="Qu’est-ce qui te passe par la tête ?" required></textarea>
+          <div class="composer-footer"><span id="char-count">0 / 280</span><button class="primary-button" type="submit">Publier <span>↗</span></button></div>
+        </form>
+      </section>
+
+      <div class="feed-heading"><div><p class="eyebrow">À EXPLORER</p><h2 id="feed-subtitle">Les dernières idées</h2></div><div class="feed-filters"><button class="filter active" data-filter="all">Tout</button><button class="filter" data-filter="popular">Populaires</button></div></div>
+      <section id="posts" class="posts" aria-live="polite"></section>
+      <footer>Orbit est un prototype créé pour apprendre. <span>Fait avec curiosité ✦</span></footer>
+    </main>
+
+    <aside class="rightbar">
+      <div class="side-card profile-card"><p class="eyebrow">TON ESPACE</p><div class="profile-hero"><div class="avatar avatar-large">Y</div><div><h3>Salut, toi !</h3><p>@toi · nouvel arrivant</p></div></div><p class="muted">Ici, tu peux tester ton futur réseau social. Personnalise-le au fil du projet.</p><div class="profile-stats"><div><strong id="post-total">0</strong><span>posts</span></div><div><strong id="like-total">0</strong><span>likes donnés</span></div></div></div>
+      <div class="side-card"><p class="eyebrow">PETIT RAPPEL</p><h3>Fais de la place aux bonnes idées.</h3><p class="muted">Sois sympa, respecte les autres et partage ce que tu aimes.</p></div>
+      <div class="side-card next-card"><p class="eyebrow">PROCHAINES ÉTAPES</p><ul><li><span>01</span> Créer le design</li><li><span>02</span> Ajouter les profils</li><li><span>03</span> Connecter une base de données</li></ul></div>
+    </aside>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
